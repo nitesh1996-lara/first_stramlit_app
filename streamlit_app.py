@@ -50,16 +50,16 @@ streamlit.header("Fruityvice Fruit Advice!")
 
 
 # Add a button to load the fruit
-if streamlit.button('Get Fruit Load List'):
-    my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-    my_data_rows = get_fruit_load_list()
-    streamlit.dataframe(my_data_row)
-my_cur.execute("select * from fruit_load_list")
-#my_data_row = my_cur.fetchone()
-my_data_row = my_cur.fetchall()
-streamlit.text("The Fruit load list contain")
-streamlit.text(my_data_row)
-streamlit.dataframe(my_data_row)
+# if streamlit.button('Get Fruit Load List'):
+#     my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+#     my_data_rows = get_fruit_load_list()
+#     streamlit.dataframe(my_data_row)
+# my_cur.execute("select * from fruit_load_list")
+# #my_data_row = my_cur.fetchone()
+# my_data_row = my_cur.fetchall()
+# streamlit.text("The Fruit load list contain")
+# streamlit.text(my_data_row)
+# streamlit.dataframe(my_data_row)
 
 
 # Allow the end user to add a fruit to the list
