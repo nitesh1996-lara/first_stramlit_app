@@ -59,7 +59,7 @@ except URLError as e:
 # my_data_row = my_cur.fetchall()
 # streamlit.text("The Fruit load list contain")
 # streamlit.text(my_data_row)
-# streamlit.dataframe(my_data_row)
+# streamlit.dataframe(my_data_rows)
 
 
 # Allow the end user to add a fruit to the list
